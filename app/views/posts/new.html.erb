@@ -1,0 +1,9 @@
+<%= form_for @post do |f| %>
+      <%= f.label :title , class: "label-space" %><br />
+      <%= f.text_field :title, class: "form-control", autofocus: true %>
+      <%= f.label :body , class: "label-space" %><br />
+      <%= f.text_field :body, class: "form-control", autofocus: true %>
+      <%= f.label :link , class: "label-space" %><br />
+      <%= f.text_field :link, class: "form-control", autofocus: true %>
+      <%= f.submit "Add Post" %>
+<% end %>
